@@ -27,11 +27,11 @@ public class BoardController extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		// !!! 테스트용 코드 !!!
-		request.getSession().setAttribute("nickname", "테스트용닉네임");
-		request.getSession().setAttribute("id", "idfortest");
+//		request.getSession().setAttribute("nickname", "테스트용닉네임");
+//		request.getSession().setAttribute("id", "idfortest");
 		
-//		request.getSession().setAttribute("nickname", "admin");
-//		request.getSession().setAttribute("id", "admin");
+		request.getSession().setAttribute("nickname", "admin");
+		request.getSession().setAttribute("id", "admin");
 		// !!! 테스트용 코드 !!!
 		
 		
@@ -442,8 +442,8 @@ public class BoardController extends HttpServlet {
 			} else if (cmd.equals("/detail.board")) {
 				// 게시글 받아오기
 				int seq = Integer.parseInt(request.getParameter("seq"));
-				BoardDTO post = dao.selectBySeq(seq);
 				dao.incrementViewCount(seq);
+				BoardDTO post = dao.selectBySeq(seq);
 				request.setAttribute("post", post);
 				
 				// 파일 받아오기
