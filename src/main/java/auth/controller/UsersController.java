@@ -173,7 +173,11 @@ public class UsersController extends HttpServlet {
 			}
 			else if (cmd.equals("/checkPassword.users")){
 				HttpSession session = request.getSession();
+<<<<<<< HEAD
 		        String pw = request.getParameter("pw");
+=======
+		        String pw = request.getParameter("password");
+>>>>>>> a0eddcb (update faq)
 		        String id = (String) session.getAttribute("id"); // 로그인한 유저 ID
 
 		        boolean isMatch = dao.checkPassword(id, pw);

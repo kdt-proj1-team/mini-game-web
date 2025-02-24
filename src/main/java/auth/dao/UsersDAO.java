@@ -130,7 +130,11 @@ public class UsersDAO {
                        
             try (ResultSet rs = pstat.executeQuery()) {
             	if (rs.next()) {
+<<<<<<< HEAD
                     String dbPassword = rs.getString("password");
+=======
+                    String dbPassword = rs.getString("pw");
+>>>>>>> a0eddcb (update faq)
                     return dbPassword.equals(pw); // 해싱된 비밀번호 비교할 경우 BCrypt 사용
                 }
             }
