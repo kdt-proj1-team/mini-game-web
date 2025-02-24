@@ -143,6 +143,21 @@
 		$("#write-false-Btn").on("click",function(){
 			alert("로그인이 필요합니다.");
 		})
+		
+		$(".notice").on("click",function(){
+			
+			let page = 1;
+			sessionStorage.setItem("last_cpage",page);
+			location.href="/noticeList.board?cpage="+page;
+		})
+		
+		$(".general").on("click",function(){
+			
+			let page = 1;
+			sessionStorage.setItem("last_cpage",page);
+			location.href="/generalList.board?cpage="+page;
+		})
+		
 	
 	</script>
 	</main>		

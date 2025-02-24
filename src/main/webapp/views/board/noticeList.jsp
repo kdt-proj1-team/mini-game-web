@@ -145,6 +145,20 @@ document.getElementById("search-btn").addEventListener("click", function(event) 
 		$(".write-notice-btn").on("click",function(){
 			location.href = "/toWrite.board";
 		})
+		
+		$(".notice").on("click",function(){
+			
+			let page = 1;
+			sessionStorage.setItem("last_cpage",page);
+			location.href="/noticeList.board?cpage="+page;
+		})
+		
+		$(".general").on("click",function(){
+			
+			let page = 1;
+			sessionStorage.setItem("last_cpage",page);
+			location.href="/generalList.board?cpage="+page;
+		})
 	
 	</script>
 </html>

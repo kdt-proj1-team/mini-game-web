@@ -109,8 +109,9 @@ background-color:black;
   color: #fff;
 }
 .paging:hover{
-	cursor:pointer;
+	cursor: pointer;
 	color: #b5b5b5;
+	
 }
 .search{
   
