@@ -108,13 +108,12 @@ background-color:black;
   background-color: #b5b5b5;
   color: #fff;
 }
+
 .paging:hover{
 	cursor: pointer;
 	color: #b5b5b5;
-	
 }
 .search{
-  
   width: 100%;
   text-align: center;
   margin-top: 20px;
@@ -191,7 +190,6 @@ background-color:black;
 }
 
 footer {
-  
   margin-top: 20px;
   padding-top: 10px;
   
